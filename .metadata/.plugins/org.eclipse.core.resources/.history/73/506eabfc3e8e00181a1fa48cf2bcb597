@@ -2,7 +2,6 @@ package renderEngine;
 
 import java.nio.FloatBuffer;
 import java.util.ArrayList;
-import java.util.List;
 
 import org.lwjgl.BufferUtils;
 import org.lwjgl.opengl.GL11;
@@ -12,8 +11,8 @@ import org.lwjgl.opengl.GL30;
 
 public class Loader {
 
-	private List<Integer> vaos = new ArrayList<Integer>();
-	private List<Integer> vbos = new ArrayList<Integer>();
+	private ArrayList<Integer> vaos = new ArrayList<Integer>();
+	private ArrayList<Integer> vbos = new ArrayList<Integer>();
 
 	public RawModel loadToVAO(float[] positions) {
 		int vaoID = createVAO();
